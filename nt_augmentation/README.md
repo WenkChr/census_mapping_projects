@@ -22,11 +22,11 @@ for free download: https://www.maps.geomatics.gov.nt.ca/HTML5Viewer_Prod/index.h
 The specific layers to download for this project are. Ensure that you select the entire territory for best
 coverage in augmenting maps:
     
-    1.) Building Footprints
-    2.) Surveyed Parcels
-    3.) Transportation Polygons (specifically for airstrips)
-    4.) Structure Points
-    5.) Unsurveyed Tenured Commissioners Land
+- Building Footprints
+- Surveyed Parcels
+- Transportation Polygons (specifically for airstrips)
+- Structure Points
+- Unsurveyed Tenured Commissioners Land
 
 The other data source used to imporve the maps was address point data sourced from the city of yellowknife
 which can be found at the following link: 
