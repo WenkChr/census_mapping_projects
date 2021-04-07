@@ -3,8 +3,8 @@
 ## Description
 
 This project took maps output by GMS and applied open data layers from the NWT ATLAS to enhance
-map readability by giving field staff more points of reference via open data. These enhancements 
-were done to mirror similar maps produced by NWT.In order to do the enhancements a process was 
+map readability by giving field staff more points of reference These enhancements were done using  
+open data to mirror similar maps produced by NWT.In order to do the enhancements a process was 
 developed using python using arcpy which would makethe enhancements and save an enhanced copy 
 in a new directory.
 
@@ -39,6 +39,40 @@ point file. For the purposes of the script it is best to download the file geoda
 Once the data is downloaded layer specific symbology and labeling symbology needs to be applied. To do this 
 open an empty arcmap session to be a layer workspace and add the ATLAS layers to the data frame.
 
+#### Layer symbology guide
+
+Below are some quick notes on how the the layers were symbolized for this iteration of the project
+
+##### Building Footprints
+
+Sybolized with a purple fill (CMYK: ) and a black outline (CMYK: ). Named buildings are labeld in grey 
+(CMYK: ) with their name from the name_e field
+
+![Image of Building Footprints](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/building_footprints.png)
+
+##### Surveyed Parcels
+
+Symbolized with a hollow fill and a solid black outline. Parcels are labeled by parcel number in areas where 
+the yellowknife addresspoints are visible the labels should be turned off so as to avoid confusion.
+
+![Image of Surveyed Parcels](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/surveyed_parcels.png)
+
+##### Transportation Polygons (specifically for airstrips)
+
+With a definition query selecting only runways to be visible. The polygons are dark brown (CMYK: ) and unlabeled
+
+![Image of Runways](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/tranportation_polygons.png)
+
+##### Structure Points
+
+Symbolized with a symbology taken from the NWT maps this layer shows certain key strucutre point as shown in the legend below.
+
+![Image of structure points](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/structure_points.png)
+
+##### Unsurveyed Tenured Commissioners Land
+
+![Image of unsurveyed parcels](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/unsurveyed_parcels.png)
+
 Apply the desired symbology and label settings to each ATLAS layer and any of the standard GMS layers
 as needed. Export each layer as a .lyr file into the same folder.
 
@@ -58,5 +92,5 @@ updated copy of the associated mdb.
 
 ### zip_mxds.py
 
-Takes all mxd’s and associated mdb’s in a single folder and creates a zip containing the mxd and
-associated mdb. Outputs everything into a single folder.
+Takes all mxd’s and their associated mdb’s contained in a directory and creates a zip containing only the mxd 
+and mdb for each map. All outputs are placed into a single dedicated out directory.
