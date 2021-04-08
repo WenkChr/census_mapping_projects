@@ -61,7 +61,7 @@ the yellowknife addresspoints are visible the labels should be turned off so as 
 
 With a definition query selecting only runways to be visible. The polygons are dark brown (CMYK: ) and unlabeled
 
-![Image of Runways](images/tranportation_polygons.PNG)
+![Image of Runways](images/transportation_polygons.PNG)
 
 ##### Structure Points
 
