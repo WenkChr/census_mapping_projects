@@ -48,30 +48,30 @@ Below are some quick notes on how the the layers were symbolized for this iterat
 Sybolized with a purple fill (CMYK: ) and a black outline (CMYK: ). Named buildings are labeld in grey 
 (CMYK: ) with their name from the name_e field
 
-![Image of Building Footprints](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/building_footprints.png)
+![Image of Building Footprints](images/building_footprints.png)
 
 ##### Surveyed Parcels
 
 Symbolized with a hollow fill and a solid black outline. Parcels are labeled by parcel number in areas where 
 the yellowknife addresspoints are visible the labels should be turned off so as to avoid confusion.
 
-![Image of Surveyed Parcels](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/surveyed_parcels.png)
+![Image of Surveyed Parcels](images/surveyed_parcels.png)
 
 ##### Transportation Polygons (specifically for airstrips)
 
 With a definition query selecting only runways to be visible. The polygons are dark brown (CMYK: ) and unlabeled
 
-![Image of Runways](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/tranportation_polygons.png)
+![Image of Runways](images/tranportation_polygons.png)
 
 ##### Structure Points
 
 Symbolized with a symbology taken from the NWT maps this layer shows certain key strucutre point as shown in the legend below.
 
-![Image of structure points](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/structure_points.png)
+![Image of structure points](images/structure_points.png)
 
 ##### Unsurveyed Tenured Commissioners Land
 
-![Image of unsurveyed parcels](https://github.com/WenkChr/census_mapping_projects/tree/master/nt_augmentation/images/unsurveyed_parcels.png)
+![Image of unsurveyed parcels](images/unsurveyed_parcels.png)
 
 Apply the desired symbology and label settings to each ATLAS layer and any of the standard GMS layers
 as needed. Export each layer as a .lyr file into the same folder.
