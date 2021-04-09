@@ -16,8 +16,8 @@ All folders should be empty at the beginning of the project and GMS zips should 
 All files extracted from the zips should be placed in the extracted folder
 All files augmented by the augment_maps.py script should be placed in the aug folder
 All zip files containing augmented maps should be placed in the aug_zips folder 
-All PDF files should be placed in the pdfs folder hich should be contricted like below (further explanation in the mxd_to_pdf.py section of this doc
-)
+All PDF files should be placed in the pdfs folder which should be contricted like below (further explanation in the mxd_to_pdf.py section of this doc)
+
 ![PDF output file structure](images/pdf_desired_output.png)
 
 ### Data Prep and Processing
