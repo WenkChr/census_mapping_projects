@@ -12,7 +12,7 @@ This project uses only internal StatsCan data and as such there are no external 
 
 While this does not have to be exact the folder structure used to get the best results for this project was as follows
 
-![Recomended File Structure](images/file_structure.PNG)
+![Recomended File Structure](images/file_structure.png)
 
 - All folders should be empty at the beginning of the project and GMS zips should be placed in the zips folder.
 - All files extracted from the zips should be placed in the extracted folder
@@ -57,8 +57,8 @@ If the desired output is the augmented GMS maps then this script will zip the ou
 
 #### Inputs 
 
-working_dir: Path to direcory where augmented files were placed
-out_folder: Path to desired ouput directory
+- working_dir: Path to direcory where augmented files were placed
+- out_folder: Path to desired ouput directory
 
 ### mxd_to_pdf.py
 

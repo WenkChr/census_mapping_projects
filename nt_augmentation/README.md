@@ -84,13 +84,36 @@ in the inputs section of the project scripts
 MXD's received from GMS were received as zip files this script contains a function that
 unzips the contents of a zip and puts all outputs into a single folder.
 
+#### Inputs
+
+- in_path: directory location of the GMS zip files. 
+- out_path: directory location to place the mxd and mdb files extracted from the GMS zips
+
 ### augment_maps.py
 
 The main augmentation script and takes unzipped mxd and mdb files from a single folder. Iterates over
 all map documents in the specified folder and outputs an augmented copy in a new folder with an
 updated copy of the associated mdb.
 
+#### Inputs
+
+- working_directory: Directory containing the extracted mxd's and mdb's
+- out_directory: The path to the directory where the augmented maps will be placed
+- workingGDB: The path to the gdb containing the feature classes that will be used to augment the map
+- work_folder: path to the folder containing the .lyr files that will be used to apply lyr specific symbology and labeling to the map
+- ***_symb_lyr: each one of these should point to a specific symbology lyr file that will be used to apply labels and symbology for that layer to the map
+- symb_lyr_basepath: The path to the folder containing .lyr files with new symbologies for the base gms layers
+- ***_lyr_base_symb_change: a list object that containes the paths to all the .lyr files in the symb_lyr_basepath folder
+- ATLAS_gdb: the path to the gdb that holds the layers downloaded from the NWT ATLAS that will be used to augment the maps
+yk_adp_GDB: Path to the gdb that contains the featureclass of yellowknife address points
+yk_adp_fc: complete path to the wyellowknife address points feature class
+
 ### zip_mxds.py
 
 Takes all mxd’s and their associated mdb’s contained in a directory and creates a zip containing only the mxd 
 and mdb for each map. All outputs are placed into a single dedicated out directory.
+
+#### Inputs 
+
+- working_dir: Path to direcory where augmented files were placed
+- out_folder: Path to desired ouput directory
